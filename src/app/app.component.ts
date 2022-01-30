@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'CarProject'
   name = ''
-  warning = 'Please enter a name'
+  warning = 'Name cannot be empty'
   carsEndpoint = 'https://s3-ap-southeast-1.amazonaws.com/he-public-data/Cars9096be5.json'
 
   cars = []
@@ -35,7 +35,7 @@ export class AppComponent {
     // check length
 
     if (!name.length){
-      this.warning = 'Please enter a name'
+      this.warning = 'Name cannot be empty'
     }
 
     else if(this.name.length > 75){
