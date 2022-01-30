@@ -1,6 +1,9 @@
 {
   "name": "netcore-angular-challenge",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
