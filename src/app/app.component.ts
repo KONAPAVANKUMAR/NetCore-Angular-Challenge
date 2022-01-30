@@ -13,9 +13,14 @@ export class AppComponent {
   carsEndpoint = 'https://s3-ap-southeast-1.amazonaws.com/he-public-data/Cars9096be5.json'
   cars = []
   carsLoaded = false
+  selectedCar = ''
 
   constructor(){
     this.getCars()
+  }
+
+  selectCar(car:string){
+    this.selectedCar = car
   }
 
   getCars(){

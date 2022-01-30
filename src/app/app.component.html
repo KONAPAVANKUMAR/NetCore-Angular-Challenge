@@ -21,7 +21,7 @@
               </div>
               <div class="hs-menu-inner">
                   <a class="dropdown-item" data-value="" data-default-selected="" href="#">Select Car</a>
-                  <a class="dropdown-item" *ngFor="let car of cars" data-value="1">{{car['brand']}}</a>
+                  <a class="dropdown-item" (click)="selectCar(car['brand'])"  *ngFor="let car of cars" data-value="1">{{car['brand']}}</a>
               </div>
           </div>
           <input class="d-none" name="example_two" readonly="readonly" aria-hidden="true" type="text"/>
@@ -34,7 +34,7 @@
       <h4 class="text-center">Your Entries</h4>
       <br>
       <li  class="list-group-item">Name : <span *ngIf="!warning">{{name}}</span></li>
-      <li class="list-group-item">Car : {{name}}</li>
+      <li class="list-group-item">Car : {{selectedCar}}</li>
     </ul>
   </div>
 </div>
