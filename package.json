@@ -2,7 +2,7 @@
   "name": "netcore-angular-challenge",
   "version": "0.0.0",
   "engines": {
-    "node": ">=16"
+    "node": "16.13.1"
   },
   "scripts": {
     "ng": "ng",
