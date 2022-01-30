@@ -9,7 +9,7 @@
 
 <div class="row">
   <div class="col-6">
-      <form class="col-6 container py-5 mt-5 rounded-3" [class.bg-danger]="warning" [class.bg-primary]="!warning">
+      <form  class="col-6 container pt-5 pb-2 mt-5 rounded-3" [class.bg-danger]="warning" [class.bg-primary]="!warning">
         <input name="name" placeholder="Enter Name" class="form-control text-center" type="text" [(ngModel)]="name" (ngModelChange)="onTypingName($event)">
         <p class="text-center my-0 text-light" *ngIf="warning">{{warning}}</p>
         <br>
@@ -26,6 +26,11 @@
           </div>
           <input class="d-none" name="example_two" readonly="readonly" aria-hidden="true" type="text"/>
       </div>
+      <br>
+      <div class="d-flex justify-content-around">
+        <p class="text-light">color</p>
+        <input type="color" [(ngModel)]="selectedColor"  name="selectedColor" id="">
+      </div>
       </form>
 
   </div>
@@ -35,9 +40,13 @@
       <br>
       <li  class="list-group-item">Name : <span *ngIf="!warning">{{name}}</span></li>
       <li class="list-group-item">Car : {{selectedCar}}</li>
+      <li class="list-group-item">Color : {{selectedColor}}</li>
     </ul>
   </div>
 </div>
 
 
+<script>
 
+
+</script>
